@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AVL Tree Visualization</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AVL Tree</h1>
+
+        <p class="subtitle">
+            Self-Balancing Binary Search Tree
+        </p>
+
+        <div class="controls">
+
+            <input
+                type="number"
+                id="valueInput"
+                placeholder="Enter a number"
+            >
+
+            <button class="insert-btn" onclick="insertValue()">
+                Insert
+            </button>
+
+            <button class="delete-btn" onclick="deleteValue()">
+                Delete
+            </button>
+
+            <button class="search-btn" onclick="searchValue()">
+                Search
+            </button>
+
+            <button class="clear-btn" onclick="clearTree()">
+                Clear
+            </button>
+
+        </div>
+
+        <p id="message"></p>
+
+        <div class="traversals">
+
+            <h2>Tree Traversals</h2>
+
+            <p>
+                <strong>Inorder:</strong>
+                <span id="inorder">-</span>
+            </p>
+
+            <p>
+                <strong>Preorder:</strong>
+                <span id="preorder">-</span>
+            </p>
+
+            <p>
+                <strong>Postorder:</strong>
+                <span id="postorder">-</span>
+            </p>
+
+        </div>
+
+        <div class="tree-section">
+
+            <h2>AVL Tree Visualization</h2>
+
+            <div id="tree"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
